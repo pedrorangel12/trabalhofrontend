@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estados e Municípios do Brasil</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Estados e Municípios do Brasil</h1>
+    
+    <div class="tabs">
+        <button id="btn-conteudo" class="tab-btn active">Conteúdo</button>
+        <button id="btn-favoritos" class="tab-btn">
+            Favoritos <span id="contador-favoritos">0</span>
+        </button>
+    </div>
+
+    <div id="tab-conteudo" class="tab-content active">
+        <h2>Estados Brasileiros</h2>
+        <div id="lista-estados">
+            <p>Carregando estados...</p>
+        </div>
+    </div>
+
+    <div id="tab-favoritos" class="tab-content">
+        <h2>Meus Favoritos</h2>
+        <div id="lista-favoritos">
+            <p>Você ainda não tem favoritos.</p>
+        </div>
+    </div>
+
+    <div id="notificacao"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

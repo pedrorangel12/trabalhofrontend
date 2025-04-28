@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0 20px;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+}
+
+.tabs {
+    display: flex;
+    margin: 20px 0;
+}
+
+.tab-btn {
+    padding: 10px 20px;
+    background-color: #ddd;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.tab-btn.active {
+    background-color: #fff;
+    font-weight: bold;
+}
+
+#contador-favoritos {
+    background-color: red;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 10px;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.tab-content {
+    display: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+#lista-estados {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.estado-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 150px;
+    background-color: #fff;
+    position: relative;
+    text-align: center;
+}
+
+.estado-card img {
+    width: 80px;
+    height: 55px;
+    margin: 10px auto;
+    display: block;
+    border: 1px solid #eee;
+}
+
+.estado-card h3 {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #333;
+}
+
+.estado-card p {
+    color: #555;
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+.btn-favorito {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.fa-heart {
+    color: red;
+}
+
+.fa-heart-o {
+    color: #777;
+}
+
+.favorito-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.favorito-item img {
+    width: 50px;
+    height: 35px;
+    margin-right: 10px;
+    border: 1px solid #eee;
+}
+
+.favorito-info {
+    flex: 1;
+}
+
+.btn-remover {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#notificacao {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: green;
+    color: white;
+    padding: 10px;
+    display: none;
+}
+
+#notificacao.show {
+    display: block;
+}
